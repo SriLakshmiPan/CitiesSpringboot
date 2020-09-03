@@ -17,7 +17,7 @@ public class ConnectDB {
 		Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 		Connection connection = DriverManager.getConnection(url, username, password);
 		PreparedStatement ps = connection.prepareStatement("select * from cities;");
-
+//System.out.println("another change");
 		int status = ps.executeUpdate();
 
 		if (status != 0) {
