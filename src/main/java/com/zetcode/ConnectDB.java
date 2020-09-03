@@ -23,6 +23,7 @@ public class ConnectDB {
 		if (status != 0) {
 			System.out.println("DB started");
 			System.out.println("executed the given query");
+			System.out.println("checking source tree");
 		}
 
 	}
