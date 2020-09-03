@@ -17,10 +17,6 @@ public class ConnectDB {
 		Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 		Connection connection = DriverManager.getConnection(url, username, password);
 		PreparedStatement ps = connection.prepareStatement("select * from cities;");
-		
-//		Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/?user=root&password=rootpassword"); 
-//		PreparedStatement ps = connection.prepareStatement("CREATE DATABASE databasename");
-//		int result = ps.executeUpdate();
 
 		int status = ps.executeUpdate();
 
